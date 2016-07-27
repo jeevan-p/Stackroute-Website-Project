@@ -3,18 +3,10 @@
 My Custom CSS
 =============
 
-Author:  Brad Hussey
-Updated: August 2013
-Notes:	 Hand coded for Udemy.com
-
-*/
- 
-
 /* --------------------------------------
    Layout
    -------------------------------------- */
-
-
+   
 
 /* --------------------------------------
    Typography
@@ -25,7 +17,7 @@ Notes:	 Hand coded for Udemy.com
    }
 
    body
-   {
+   {      
       background: url(../../images/sea_medium.jpg) top center no-repeat;
    }
 
@@ -46,17 +38,28 @@ Notes:	 Hand coded for Udemy.com
 /* --------------------------------------
    Navbar
    -------------------------------------- */
-   .navsrch
+   .navbar-form .commtexts
+   {
+      width: 100%;
+   }
+
+   navsrch
    {
       width: 300px;
       height: 30px;
    }
-   .logo
+   .mymainlogo
    {
       max-width: 245px;
       overflow: hidden;
-      padding: 5px 0px 0px 15px;
+      padding: 0px;
    }
+
+   .logoheader
+   {      
+      height: 80px;
+   }
+
    .clr
    {
       color: darkgrey;
@@ -65,6 +68,11 @@ Notes:	 Hand coded for Udemy.com
    #searchme
    {
       margin-top: 145px;      
+   }
+
+   .mylogo
+   {
+      padding: 0px; 
    }
 
 /* --------------------------------------
@@ -94,7 +102,8 @@ Notes:	 Hand coded for Udemy.com
 
    #myCarl .item
    {
-      height: 400px;
+      height: 500px;
+      width: 100%;
    }
 
    .carousel-caption h3
@@ -138,9 +147,10 @@ Notes:	 Hand coded for Udemy.com
       color: black;
    }
 
-   #TopSearches .col-12
+   #TopSearches .container
    {
       background: #eee;
+      padding-bottom: 15px;
    }
 
    /* --------------------------------------
@@ -162,14 +172,6 @@ Notes:	 Hand coded for Udemy.com
       margin-bottom: 30px;
    }
 
-   .relweb
-   {
-      height: 100px;
-      padding-top: 5px;
-      margin-top: 5px;
-      margin-bottom: 5px;
-   }
-
    .webr
    {
       height: 80px;
@@ -180,6 +182,22 @@ Notes:	 Hand coded for Udemy.com
       height: 40px;
       padding: 0px;
    }
+
+   .list-group
+   {
+      text-align: center;
+   }
+
+   #tab3 form
+   {
+      text-align: center;
+   }
+
+   #tab3 form
+   {
+      text-align: center;
+   }
+
 
 /* --------------------------------------
    Footer
@@ -244,7 +262,7 @@ Notes:	 Hand coded for Udemy.com
    -------------------------------------- */
    p
    {
-      font-family: cursive;
+      font-family: 'Droid Sans', sans-serif;
    }
 
 
@@ -254,61 +272,98 @@ Notes:	 Hand coded for Udemy.com
 
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
-	
+  
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+
+   .navbar-form
+   {
+      width: 100%;
+   }
    
-   body
+   body /* Background Image Sea */
    {
       background: url(../../images/sea_small.jpg) top center no-repeat;
    }
    
-   .navsrch
+   .navsrch /* Search box in Nav Bar */
    {
+      float: left;
       width: 200px;
       height: 30px;
 
    }
 
-   .formtxt input
+   .formtxt input /* Main Search box */
    {      
       height: 40px;
-      width: 300px;
+      width: 270px;
       font-size: 15px;
    }
 
-   #myCarl .item
+   #myCarl .item /* Carousal Height when small */
    {
       height: 310px;
    }
 
-   #slide1
+   #slide1 /* carousal Small Image one */
    {
       background: url(../../images/carousel1_small.jpg) top center no-repeat; 
    }
-   #slide2
+   #slide2 /* carousal Small Image two */
    {
       background: url(../../images/carousel2_small.jpg) top center no-repeat; 
    }
-   #slide3
+   #slide3 /* carousal Small Image three */
    {
       background: url(../../images/carousel3_small.jpg) top center no-repeat; 
    }
-   .carousel-caption h3
+   .carousel-caption h3 /* carousal Small Caption */
    {      
       text-shadow: 5px 5px 20px black;
       font-size: 20px;
    }
-   .itop img
+   .itop img /* Interesting Topic Image */
    {
       height: 200px;
    }
 
-   .topsections img
+   .topsections img /* Top Searches Image */
    {
       height: 285px;
+   }
+
+   .webr /* Related Website Image */
+   {
+      height: 60px;
+   }
+
+   .relwebhead /* Related Websites Header */
+   {
+      margin-top:30px;
+   }
+
+   .mycollapse
+   {
+      overflow: hidden;
+   }
+
+   .menuitem
+   {
+      padding-left: 20px;
+   }
+
+   .navbar-nav .open .dropdown-menu /*Drop down menu styling*/
+   {
+      border: 1px solid rgba(0,0,0,.15);
+      box-shadow: 0 6px 12px rgba(0,0,0,.175);
+   }
+
+   .mm
+   {
+      width: 40%;
    }
    	
 }
@@ -320,30 +375,30 @@ Notes:	 Hand coded for Udemy.com
       background: url(../../images/sea_large.jpg) top center no-repeat;
    }	
 
-   #myCarl .item
+   #myCarl .item  /* Carousal height */
    {
-      height: 500px;
+      height: 600px;
    }
 
-   #slide1
+   #slide1 /* carousal Large Image one */
    {
       background: url(../../images/carousel1_large.jpg) top center no-repeat; 
    }
-   #slide2
+   #slide2 /* carousal Large Image two */
    {
       background: url(../../images/carousel2_large.jpg) top center no-repeat; 
    }
-   #slide3
+   #slide3 /* carousal Large Image three */
    {
       background: url(../../images/carousel3_large.jpg) top center no-repeat; 
    }
 
-   .itop img
+   .itop img /* Interesting Topic Image */
    {
       height: 300px;
    }
 
-   .topsections img
+   .topsections img /* Top Searches Image */
    {
       height: 285px;
    }

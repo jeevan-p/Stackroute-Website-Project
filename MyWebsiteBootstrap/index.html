@@ -4,7 +4,7 @@
 	<head>
 		
 		<!-- Website Title & Description for Search Engine purposes -->
-		<title></title>
+		<title>Search Me - Free Knowledge Website</title>
 		<meta name="description" content="">
 		
 		<!-- Mobile viewport optimized -->
@@ -12,6 +12,7 @@
 		
 		<!-- Bootstrap CSS -->
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
 		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
 		
 		<!-- Custom CSS -->
@@ -19,32 +20,35 @@
 		
 		<!-- Include Modernizr in the head, before any other Javascript -->
 		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+		<!-- Custom Font -->
+		<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 		
 	</head>
 	<body>
 	
 		<div class="container" id="main">
 			
-			<div class="navbar navbar-fixed-top">
+			<div class="navbar navbar-default navbar-fixed-top">
 				<div class="container">
-
-					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
-						<span class="glyphicon glyphicon-chevron-down clr"/>
-					</button>
-					<a href="#" class="navbar-brand logo" alt="Logo"><img src="images/logofull.png"></a>
-				
-					<div class="nav-collapse collapse navbar-responsive-collapse">
+					<div class="navbar-header logoheader">
+						<button class="navbar-toggle collapsed" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button" aria expanded="false">
+							<span class="glyphicon glyphicon-chevron-down clr"/>
+						</button>
+						<a href="#" class="navbar-brand mylogo" alt="Logo"><img src="images/logofull.png" alt="brand" class="mymainlogo"></a>
+					</div>
+					<div class="collapse navbar-collapse navbar-responsive-collapse mycollapse">
 						<ul class="nav navbar-nav pull-right">
 							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									<span class="glyphicon glyphicon-user"></span> Welcome Guest
 									<strong class="caret"></strong>
 								</a>
-								<ul class="dropdown-menu">
+								<ul class="dropdown-menu drp">
 									<li>
 										<a href="#myModal3" data-toggle="modal">Login</a>
 									</li>
-									<li class="divider"></li>
+									<li role="separator" class="divider"></li>
 									<li>
 										<a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
 									</li>
@@ -52,16 +56,16 @@
 							</li>
 						</ul>
 						<br><br><br><br>
-						<div class="row">	
+						<div class="row mm">	
 							<ul class="nav navbar-nav">
-								<li class="active"><a href="#">Home</a></li>
-								<li><a href="#">Portfolio</a></li>
-								<li><a href="#myModal1" data-toggle="modal">About Us</a></li>
-								<li><a href="#myModal2" data-toggle="modal">Contact Us</a></li>
+								<li class="active menuitem"><a href="#">Home</a></li>
+								<li class="menuitem"><a href="#">Portfolio</a></li>
+								<li class="menuitem"><a href="#myModal1" data-toggle="modal">About Us</a></li>
+								<li class="menuitem"><a href="#myModal2" data-toggle="modal">Contact Us</a></li>
 					 		</ul>						
 							<form class="navbar-form pull-right">
-								<input type="text" name="search" placeholder="Search Me" class="navsrch form-control">
-								<button type="button" class="btn btn-default btn-small"><span class="glyphicon glyphicon-search"></span></button>
+								<input type="text" name="search" placeholder="Search Me" class="form-control navsrch">								
+								<button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-search"></span></button>
 							</form>
 
 						</div>	
@@ -81,14 +85,17 @@
 								<input type="text" name="search" class="form-control">
 							</div> <!-- End of Text Box -->
 							<div class="row formbut">							
-								<button type="button" class="btn btn-default btn-medium"><span class="glyphicon glyphicon-search"> Search Me</span></button>
+								<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span> Search Me</button>
 							</div> <!-- End of Button -->
 						</form>
 					</div> <!-- End of Panel Body -->
 				</div> <!-- End of Panel -->
 			</div> <!-- End of SearchMe -->
+		</div> <!-- End of Container -->
 
+		<div class="container-fluid">
 			<div class="row" id="hero">
+		
 				<div class="carousel slide" id="myCarl">
 
 					<!-- Indicator (small dots below) -->
@@ -127,55 +134,64 @@
 						<span class="icon-next"></span>
 					</a> <!-- End of Right Arrow -->
 
-
 				</div> <!-- End of Carousel Slide -->
 			</div> <!-- End of Hero -->
+		</div> <!-- End of Container Fluid -->
+
+		<div class="container" id="main">
 
 			<div class="row" id="intTopics">
 
-				<div class="col-12">
-					<h3>Interesting Topics</h3>					
-				</div> <!-- end of Int Heading -->
+				<div class="container">
+					<div>
+						<h3>Interesting Topics</h3>					
+					</div> <!-- end of Int Heading -->
 			
-				<div class="row">
+					<div class="row">
 
-					<div class="col-sm-4">
-						<div class="panel panel-block itop">
-							<div class="panel-heading">
-								<h4 class="panel-title"><a href="#">Technologies</a></h4>
-							</div> <!-- End of Panel heading -->
-							<a href="#"><img src="images/tech.jpg" alt="Technology"></a>
-							<p>This page is for you if you are a Techy. try it now!</p>
-						</div> <!-- End of Panel -->
-					</div> <!-- End of Col 4 -->
+						<div class="col-sm-4">
+							<div class="panel panel-default panel-block itop">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">Technology</a></h4>
+								</div> <!-- End of Panel heading -->
+								<div class="panel-body">
+									<a href="#"><img src="images/tech.jpg" alt="Technology"></a>
+									<p>This page is for you if you are a Techy. try it now!</p>
+								</div>
+							</div> <!-- End of Panel -->
+						</div> <!-- End of Col 4 -->
 
-					<div class="col-sm-4">
-						<div class="panel panel-block itop">
-							<div class="panel-heading">
-								<h4 class="panel-title"><a href="#">Science</a></h4>
-							</div> <!-- End of Panel heading -->
-							<a href="#"><img src="images/science.jpg" alt="Science"></a>
-							<p>For all those who are interested in Science.</p>
-						</div> <!-- End of Panel -->
-					</div> <!-- End of Col 4 -->
+						<div class="col-sm-4">
+							<div class="panel panel-default panel-block itop">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">Science</a></h4>
+								</div> <!-- End of Panel heading -->
+								<div class="panel-body">
+									<a href="#"><img src="images/science.jpg" alt="Science"></a>
+									<p>For all those who are interested in Science.</p>
+								</div>
+							</div> <!-- End of Panel -->
+						</div> <!-- End of Col 4 -->
 
-					<div class="col-sm-4">
-						<div class="panel panel-block itop">
-							<div class="panel-heading">
-								<h4 class="panel-title"><a href="#">Categories</a></h4>
-							</div> <!-- End of Panel heading -->
-							<a href="#"><img src="images/books.png" alt="Books"></a>
-							<p>Search the topic by Categories! Lot of categories you can't even imagine!</p>	
-						</div> <!-- End of Panel -->
-					</div> <!-- End of Col 4 -->
-					
+						<div class="col-sm-4">
+							<div class="panel panel-default panel-block itop">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">Categories</a></h4>
+								</div> <!-- End of Panel heading -->
+								<div class="panel-body">
+									<a href="#"><img src="images/books.png" alt="Books"></a>
+									<p>Search the topic by Categories! Lot of categories you can't even imagine!</p>	
+								</div>
+							</div> <!-- End of Panel -->
+						</div> <!-- End of Col 4 -->
+					</div> <!-- End of Col 12 -->
 				</div> <!-- End of Interest -->
 			
 			</div> <!-- End of Interesting Topics -->
 
 			<div class="row" id="TopSearches">
 
-				<div class="col-12">
+				<div class="container">
 					<div>
 						<h3>Top Searches</h3>
 					</div>
@@ -242,45 +258,42 @@
 								</h4>
 								<p>You can reach us at</p>
 								<p> Mob: 09998877123<br>Office: 0111-22113311</p>
-								<p>Or mail us at : searchme@mail.com</p>
-								<p>Or just fill out the form below!</p>
 								<hr>
-								<form class="navbar-form">
-									<input type="text" name="name" placeholder="Enter your name" class="entname form-control">
-									<br>
-									<input type="text" name="mail" placeholder="Enter your mail id" class="entmail form-control">
-									<br>
-									<textarea class="form-control entcomm" rows="10"></textarea>
-									<button type="button" class="btn btn-primary btn-medium entbut">Submit Comment</span></button>
-								</form>
+								<p>Or mail us at : searchme@mail.com</p>
+								<hr>
+								<p>Or just fill out a form <a href="#myModal2" data-toggle="modal">here</a>!</p>
+								
+								
 							</div> <!-- End of Tab 3 pane -->
 
 						</div> <!-- end of tab content -->
 					</div><!--  End of Left Column -->
-					<div class="col-sm-6">
-						<h4>Related Websites</h4>
-						<a href="#">
-							<div class="panel relweb">
-								<img src="images/wiki.png" alt="Wikipedia" class="webr">
-							</div>
-						</a>
-						<a href="#">
-							<div class="panel relweb">
-								<img src="images/quora.jpg" alt="Quora" class="webr">
-							</div>
-						</a>
-						<a href="#">
-							<div class="panel relweb">
-								<img src="images/ask.jpg" alt="Ask-com" class="webr">
-							</div>
-						</a>
-						<div class="panel morsit">
-							<button type="button" class="btn btn-link">More Sites</button>
+					<div class="col-sm-6">						
+						<h4 class="relwebhead">Related Websites</h4>
+						<div class="list-group">
+							<a href="#" class="list-group-item">
+								<div class="relweb">
+									<img src="images/wiki.png" alt="Wikipedia" class="webr">
+								</div>
+							</a>
+							<a href="#" class="list-group-item">
+								<div class="relweb">
+									<img src="images/quora.png" alt="Quora" class="webr">
+								</div>
+							</a>
+							<a href="#" class="list-group-item">
+								<div class="relweb">
+									<img src="images/ask.png" alt="Ask-com" class="webr">
+								</div>
+							</a>
+							<a href="#" class="morsit list-group-item">
+								<button type="button" class="btn btn-link">More Sites</button>
+							</a>
 						</div>
 					</div><!--  End of Right Column -->
 				</div> <!-- End of Col 12 -->
 				
-			</div> <!-- End of Top Searches -->
+			</div> <!-- End of About us -->
 
 		</div> <!-- End of Main Container -->
 
@@ -358,11 +371,11 @@
 										<p>Or just fill out the form below!</p>
 										<hr>
 										<form class="navbar-form">
-											<input type="text" name="name" placeholder="Enter your name" class="entname form-control">
+											<input type="text" name="name" placeholder="Enter your name" class="entname form-control commtexts">
 											<br>
-											<input type="text" name="mail" placeholder="Enter your mail id" class="entmail form-control">
+											<input type="text" name="mail" placeholder="Enter your mail id" class="entmail form-control commtexts">
 											<br>
-											<textarea class="form-control entcomm" rows="10"></textarea>
+											<textarea class="form-control entcomm commtexts" rows="10"></textarea>
 											<button type="button" class="btn btn-primary btn-medium entbut">Submit Comment</span></button>
 										</form>
 									</div> <!-- End of Modal 2 Body -->
@@ -382,15 +395,15 @@
 									</div> <!-- End of Modal 2 Header -->
 									<div class="modal-body">
 										<form class="navbar-form">
-											<input type="text" name="name" placeholder="Username" class="form-control usrname">
+											<input type="text" name="name" placeholder="Username" class="form-control usrname commtexts">
 											<br><br>
-											<input type="password" name="pass" placeholder="Password" class="form-control pswrd">
+											<input type="password" name="pass" placeholder="Password" class="form-control pswrd commtexts">
 											<br><br>													
 											<button type="button" class="btn btn-primary btn-medium logn">Login</span></button>
 										</form>
 									</div> <!-- End of Modal 3 Body -->
 									<div class="modal-footer">
-										<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+										<button class="btn btn-default" data-dismiss="modal" type="button">Cancel</button>
 									</div> <!-- End of Modal 3 footer -->
 								</div> <!-- End of Modal 3 Content -->
 							</div> <!-- End of Modal 3 Dialog -->
@@ -422,19 +435,19 @@
 		</footer> <!-- End of Footer -->
 	
 
-	<!-- All Javascript at the bottom of the page for faster page loading -->
+		<!-- All Javascript at the bottom of the page for faster page loading -->
+			
+		<!-- First try for the online version of jQuery-->
+		<script src="http://code.jquery.com/jquery.js"></script>
 		
-	<!-- First try for the online version of jQuery-->
-	<script src="http://code.jquery.com/jquery.js"></script>
-	
-	<!-- If no online access, fallback to our hardcoded version of jQuery -->
-	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
-	
-	<!-- Bootstrap JS -->
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-	
-	<!-- Custom JS -->
-	<script src="includes/js/script.js"></script>
+		<!-- If no online access, fallback to our hardcoded version of jQuery -->
+		<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+		
+		<!-- Bootstrap JS -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		
+		<!-- Custom JS -->
+		<script src="includes/js/script.js"></script>
 	
 	</body>
 </html>
