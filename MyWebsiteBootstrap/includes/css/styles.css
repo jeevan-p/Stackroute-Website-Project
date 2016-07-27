@@ -8,7 +8,7 @@ Updated: August 2013
 Notes:	 Hand coded for Udemy.com
 
 */
-
+ 
 
 /* --------------------------------------
    Layout
@@ -19,8 +19,29 @@ Notes:	 Hand coded for Udemy.com
 /* --------------------------------------
    Typography
    -------------------------------------- */
+   .lead small
+   {
+      font-size: 14px;
+   }
 
+   body
+   {
+      background: url(../../images/sea_medium.jpg) top center no-repeat;
+   }
 
+   .panel
+   {
+      text-align: center;
+   }
+   .panel p
+   {
+      margin-top: 40px;
+      font-size: 18px;
+   }
+   .itop img
+   {
+      height: 200px;
+   }
 
 /* --------------------------------------
    Navbar
@@ -41,20 +62,190 @@ Notes:	 Hand coded for Udemy.com
       color: darkgrey;
    }
 
-   
+   #searchme
+   {
+      margin-top: 145px;      
+   }
+
+/* --------------------------------------
+   Search Me
+   -------------------------------------- */   
+   .formbut
+   {
+      padding-top: 10px;
+   }
+
+   .formtxt input
+   {
+      height: 40px;
+      width: 500px;
+      font-size: 20px;
+      display: initial;
+   }
+
+
 /* --------------------------------------
    Carousel
    -------------------------------------- */
+   #hero
+   {
+      margin-bottom: 20px; 
+   }
 
+   #myCarl .item
+   {
+      height: 400px;
+   }
 
+   .carousel-caption h3
+   {      
+      text-shadow: 5px 5px 20px black;
+   }
+
+   #slide1
+   {
+      background: url(../../images/carousel1_medium.jpg) top center no-repeat; 
+   }
+   #slide2
+   {
+      background: url(../../images/carousel2_medium.jpg) top center no-repeat; 
+   }
+   #slide3
+   {
+      background: url(../../images/carousel3_medium.jpg) top center no-repeat; 
+   }
+
+/* --------------------------------------
+   Interestin Topics
+   -------------------------------------- */
+   .topimages
+   {
+      padding-top: 20px;
+   }
+
+   .topsections
+   {
+      text-align: center;
+   }
+
+   .topsections img
+   {
+      height: 250px;
+   }
+
+   .itop a
+   {
+      color: black;
+   }
+
+   #TopSearches .col-12
+   {
+      background: #eee;
+   }
+
+   /* --------------------------------------
+   About us
+   -------------------------------------- */
+   .entname,.entmail,.entcomm,.entbut
+   {
+      margin: 10px 0px 0px;
+      width: 100%; 
+   }
+
+   #tab1 img,#modaltab1 img
+   {
+      height: 100px;
+   }
+
+   .mytabs
+   {
+      margin-bottom: 30px;
+   }
+
+   .relweb
+   {
+      height: 100px;
+      padding-top: 5px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+   }
+
+   .webr
+   {
+      height: 80px;
+   }
+
+   .morsit
+   {
+      height: 40px;
+      padding: 0px;
+   }
+
+/* --------------------------------------
+   Footer
+   -------------------------------------- */
+   footer
+   {
+      background: #333;
+      color: white;
+      padding: 20px;
+   }
+
+   .socimg
+   {
+      height: 20px;
+   }
+
+   .foot1
+   {
+      text-align: left;
+   }
+
+   .foot2
+   {
+      text-align: right;
+   }
+
+   .foot3
+   {
+      text-align: center;
+      margin-top: 30px;      
+   }
+
+   .foot4
+   {
+      text-align: center;
+   }
+
+   .foot1 ul
+   {
+      padding-left: 20px;
+   }
+
+   .foot1 ul li
+   {
+      display: inline;
+      padding-right: 30px;
+   }
+
+   /* Modal */
+   .lst
+   {
+      padding-right: 0px;
+   }
+
+   footer .modal
+   {
+      color: black;
+   }
 
 /* --------------------------------------
    Global Styles
    -------------------------------------- */
-p
-{
-   font-family: cursive;
-}
+   p
+   {
+      font-family: cursive;
+   }
 
 
 /* --------------------------------------
@@ -68,10 +259,92 @@ p
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-	
+   
+   body
+   {
+      background: url(../../images/sea_small.jpg) top center no-repeat;
+   }
+   
+   .navsrch
+   {
+      width: 200px;
+      height: 30px;
+
+   }
+
+   .formtxt input
+   {      
+      height: 40px;
+      width: 300px;
+      font-size: 15px;
+   }
+
+   #myCarl .item
+   {
+      height: 310px;
+   }
+
+   #slide1
+   {
+      background: url(../../images/carousel1_small.jpg) top center no-repeat; 
+   }
+   #slide2
+   {
+      background: url(../../images/carousel2_small.jpg) top center no-repeat; 
+   }
+   #slide3
+   {
+      background: url(../../images/carousel3_small.jpg) top center no-repeat; 
+   }
+   .carousel-caption h3
+   {      
+      text-shadow: 5px 5px 20px black;
+      font-size: 20px;
+   }
+   .itop img
+   {
+      height: 200px;
+   }
+
+   .topsections img
+   {
+      height: 285px;
+   }
+   	
 }
 
 /* Large desktop */
 @media (min-width: 1200px) {
-	
+   body
+   {
+      background: url(../../images/sea_large.jpg) top center no-repeat;
+   }	
+
+   #myCarl .item
+   {
+      height: 500px;
+   }
+
+   #slide1
+   {
+      background: url(../../images/carousel1_large.jpg) top center no-repeat; 
+   }
+   #slide2
+   {
+      background: url(../../images/carousel2_large.jpg) top center no-repeat; 
+   }
+   #slide3
+   {
+      background: url(../../images/carousel3_large.jpg) top center no-repeat; 
+   }
+
+   .itop img
+   {
+      height: 300px;
+   }
+
+   .topsections img
+   {
+      height: 285px;
+   }
 }

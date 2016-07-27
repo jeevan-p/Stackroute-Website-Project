@@ -42,7 +42,7 @@
 								</a>
 								<ul class="dropdown-menu">
 									<li>
-										<a href="#">Login</a>
+										<a href="#myModal3" data-toggle="modal">Login</a>
 									</li>
 									<li class="divider"></li>
 									<li>
@@ -52,38 +52,373 @@
 							</li>
 						</ul>
 						<br><br><br><br>
-						<div>	
+						<div class="row">	
 							<ul class="nav navbar-nav">
 								<li class="active"><a href="#">Home</a></li>
 								<li><a href="#">Portfolio</a></li>
-								<li><a href="#">About Us</a></li>
-								<li><a href="#">Contact Us</a></li>
+								<li><a href="#myModal1" data-toggle="modal">About Us</a></li>
+								<li><a href="#myModal2" data-toggle="modal">Contact Us</a></li>
 					 		</ul>						
 							<form class="navbar-form pull-right">
-								<input type="text" name="search" placeholder="Search Me" class="navsrch">
+								<input type="text" name="search" placeholder="Search Me" class="navsrch form-control">
 								<button type="button" class="btn btn-default btn-small"><span class="glyphicon glyphicon-search"></span></button>
 							</form>
+
 						</div>	
-					</div>
-				</div>
+					</div> <!-- End of Collapsing Nav Bar -->
+				</div> <!-- End of Container -->
 			</div> <!-- End of Navbar -->
+		
+			<div class="row" id="searchme">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<h3 class="lead">
+							Welcome to Search Me<br>
+							<small>Search your favourite topic below..!</small>
+						</h3> <!-- End of Lead Heading -->
+				 		<form>
+				 			<div class="row formtxt">
+								<input type="text" name="search" class="form-control">
+							</div> <!-- End of Text Box -->
+							<div class="row formbut">							
+								<button type="button" class="btn btn-default btn-medium"><span class="glyphicon glyphicon-search"> Search Me</span></button>
+							</div> <!-- End of Button -->
+						</form>
+					</div> <!-- End of Panel Body -->
+				</div> <!-- End of Panel -->
+			</div> <!-- End of SearchMe -->
 
 			<div class="row" id="hero">
-				
+				<div class="carousel slide" id="myCarl">
+
+					<!-- Indicator (small dots below) -->
+					<ol class="carousel-indicators">
+						<li class="active" data-slide-to="0" data-target="#myCarl"></li>
+						<li data-slide-to="1" data-target="#myCarl"></li>
+						<li data-slide-to="2" data-target="#myCarl"></li>
+					</ol>
+
+					<div class="carousel-inner">
+
+						<div class="item active" id="slide1">
+							<div class="carousel-caption">
+								<h3>This is Search Me, the largest knowledge center!</h3>
+							</div> <!-- End of Car Caption -->
+						</div> <!-- End of Slide 1 -->
+
+						<div class="item" id="slide2">
+							<div class="carousel-caption">
+								<h3>Largest Collection of e-Books</h3>
+							</div> <!-- End of Car Caption -->
+						</div> <!-- End of Slide 2 -->
+
+						<div class="item" id="slide3">
+							<div class="carousel-caption">
+								<h3>Huge Collection of Computer Games and much more...</h3>
+							</div> <!-- End of Car Caption -->
+						</div> <!-- End of Slide 3 -->
+					
+					</div> <!-- End of Carousel Inner -->
+
+					<a class="left carousel-control" data-slide="prev" href="#myCarl">
+						<span class="icon-prev"></span>
+					</a> <!-- End of Left Arrow -->
+					<a class="right carousel-control" data-slide="next" href="#myCarl">
+						<span class="icon-next"></span>
+					</a> <!-- End of Right Arrow -->
+
+
+				</div> <!-- End of Carousel Slide -->
 			</div> <!-- End of Hero -->
 
 			<div class="row" id="intTopics">
-				
+
+				<div class="col-12">
+					<h3>Interesting Topics</h3>					
+				</div> <!-- end of Int Heading -->
+			
+				<div class="row">
+
+					<div class="col-sm-4">
+						<div class="panel panel-block itop">
+							<div class="panel-heading">
+								<h4 class="panel-title"><a href="#">Technologies</a></h4>
+							</div> <!-- End of Panel heading -->
+							<a href="#"><img src="images/tech.jpg" alt="Technology"></a>
+							<p>This page is for you if you are a Techy. try it now!</p>
+						</div> <!-- End of Panel -->
+					</div> <!-- End of Col 4 -->
+
+					<div class="col-sm-4">
+						<div class="panel panel-block itop">
+							<div class="panel-heading">
+								<h4 class="panel-title"><a href="#">Science</a></h4>
+							</div> <!-- End of Panel heading -->
+							<a href="#"><img src="images/science.jpg" alt="Science"></a>
+							<p>For all those who are interested in Science.</p>
+						</div> <!-- End of Panel -->
+					</div> <!-- End of Col 4 -->
+
+					<div class="col-sm-4">
+						<div class="panel panel-block itop">
+							<div class="panel-heading">
+								<h4 class="panel-title"><a href="#">Categories</a></h4>
+							</div> <!-- End of Panel heading -->
+							<a href="#"><img src="images/books.png" alt="Books"></a>
+							<p>Search the topic by Categories! Lot of categories you can't even imagine!</p>	
+						</div> <!-- End of Panel -->
+					</div> <!-- End of Col 4 -->
+					
+				</div> <!-- End of Interest -->
+			
 			</div> <!-- End of Interesting Topics -->
 
 			<div class="row" id="TopSearches">
+
+				<div class="col-12">
+					<div>
+						<h3>Top Searches</h3>
+					</div>
+					<div>
+						<div class="col-sm-3 topsections">
+							<a href="#"><img src="images/kabali.jpg" class="topimages"></a>
+							<h4><a href="#">Kabali</a><br><small>  Movie/Tamil</small></h4>
+						</div>
+						<div class="col-sm-3 topsections">
+							<a href="#"><img src="images/messi.jpg" class="topimages"></a>
+							<h4><a href="#">Lionel Messi</a><br><small>  Footballer</small></h4>
+						</div>
+						<div class="col-sm-3 topsections">
+							<a href="#"><img src="images/iphone.png" class="topimages"></a>
+							<h4><a href="#">Apple Iphone 6s</a><br><small>  Mobile/Technology</small></h4>
+						</div>
+						<div class="col-sm-3 topsections">
+							<a href="#"><img src="images/eminem.jpg" class="topimages"></a>
+							<h4><a href="#">Eminem - Drinking on you</a><br><small>  Song/Album</small></h4>
+						</div>
+					</div><!--  End of Sections -->
+				</div> <!-- End of Col 12 -->
+				
+			</div> <!-- End of Top Searches -->
+			<hr>
+			<div class="row" id="aboutUs">
+
+				<div class="col-12 mytabs">
+					<div>
+						<h3>About Us</h3>
+					</div>
+					<div class="col-sm-6">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tab1" data-toggle="tab">Overview</a></li>
+							<li><a href="#tab2" data-toggle="tab">Office</a></li>
+							<li><a href="#tab3" data-toggle="tab">Contact</a></li>
+						</ul> <!-- End of Tab UL -->
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab1">
+								<h4>
+									Overview of this Site
+								</h4>
+								<img src="images/logo.png">
+								<p>
+									Knowledge sharing is an activity through which knowledge (namely, information, skills, or expertise) is exchanged among people, friends, families, communities (for example, Wikipedia), or organizations.
+								</p>
+								<p>
+									Through this site, one can share different topics (registration required) with others.
+								</p>
+								<p>
+									The data is secure with us. Your privacy is our highest priority. We won't collect any information that is given in this site.
+								</p>
+							</div> <!-- End of Tab 1 pane -->
+							<div class="tab-pane" id="tab2">
+								<h4>
+									Office Information
+								</h4>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d972.1421073667761!2d77.61363552916934!3d12.93543630650166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae144e0d9adf39%3A0xc8064976a76aefa2!2sKoramangala+Social!5e0!3m2!1sen!2sin!4v1469533592124" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+								<p>We have settled ourselves in Madiwala, Bangalore.</p>
+							</div> <!-- End of Tab 2 pane -->
+							<div class="tab-pane" id="tab3">
+								<h4>
+									Contact Information
+								</h4>
+								<p>You can reach us at</p>
+								<p> Mob: 09998877123<br>Office: 0111-22113311</p>
+								<p>Or mail us at : searchme@mail.com</p>
+								<p>Or just fill out the form below!</p>
+								<hr>
+								<form class="navbar-form">
+									<input type="text" name="name" placeholder="Enter your name" class="entname form-control">
+									<br>
+									<input type="text" name="mail" placeholder="Enter your mail id" class="entmail form-control">
+									<br>
+									<textarea class="form-control entcomm" rows="10"></textarea>
+									<button type="button" class="btn btn-primary btn-medium entbut">Submit Comment</span></button>
+								</form>
+							</div> <!-- End of Tab 3 pane -->
+
+						</div> <!-- end of tab content -->
+					</div><!--  End of Left Column -->
+					<div class="col-sm-6">
+						<h4>Related Websites</h4>
+						<a href="#">
+							<div class="panel relweb">
+								<img src="images/wiki.png" alt="Wikipedia" class="webr">
+							</div>
+						</a>
+						<a href="#">
+							<div class="panel relweb">
+								<img src="images/quora.jpg" alt="Quora" class="webr">
+							</div>
+						</a>
+						<a href="#">
+							<div class="panel relweb">
+								<img src="images/ask.jpg" alt="Ask-com" class="webr">
+							</div>
+						</a>
+						<div class="panel morsit">
+							<button type="button" class="btn btn-link">More Sites</button>
+						</div>
+					</div><!--  End of Right Column -->
+				</div> <!-- End of Col 12 -->
 				
 			</div> <!-- End of Top Searches -->
 
 		</div> <!-- End of Main Container -->
 
 		<footer>
-			
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 foot1 pull-left">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#myModal1" data-toggle="modal">About Us</a></li>
+							<li><a href="#myModal2" data-toggle="modal">Contact Us</a></li>
+						</ul>						
+
+					</div> <!-- end of Col Sm 6 -->
+
+					<!-- My Modals -->	
+						<div class="modal fade" id="myModal1">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="close" data-dismiss="modal">&times;</button>
+										<h3 class="modal-title">About us</h3>
+									</div> <!-- End of Modal Header -->
+									<div class="modal-body">
+										<ul class="nav nav-tabs">
+											<li class="active lst"><a href="#modaltab1" data-toggle="tab">Overview</a></li>
+											<li class="lst"><a href="#modaltab2" data-toggle="tab">Office</a></li>												
+										</ul> <!-- End of Tab UL -->
+										<div class="tab-content">
+											<div class="tab-pane active" id="modaltab1">
+												<h4>
+													Overview of this Site
+												</h4>
+												<img src="images/logo.png">
+												<p>
+													Knowledge sharing is an activity through which knowledge (namely, information, skills, or expertise) is exchanged among people, friends, families, communities (for example, Wikipedia), or organizations.
+												</p>
+												<p>
+													Through this site, one can share different topics (registration required) with others.
+												</p>
+												<p>
+													The data is secure with us. Your privacy is our highest priority. We won't collect any information that is given in this site.
+												</p>
+											</div> <!-- End of Tab 1 pane -->
+											<div class="tab-pane" id="modaltab2">
+												<h4>
+													Office Information
+												</h4>
+												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d972.1421073667761!2d77.61363552916934!3d12.93543630650166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae144e0d9adf39%3A0xc8064976a76aefa2!2sKoramangala+Social!5e0!3m2!1sen!2sin!4v1469533592124" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+												<p>We have settled ourselves in Madiwala, Bangalore.</p>
+											</div> <!-- End of Tab 2 pane -->												
+
+										</div> <!-- end of tab content -->										
+
+									</div> <!-- End of Modal 1 Body -->
+									<div class="modal-footer">
+										<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+									</div> <!-- End of Modal 1 footer -->
+								</div> <!-- End of Modal 1 Content -->
+							</div> <!-- End of Modal 1 Dialog -->
+						</div> <!-- End of Modal 1 -->
+
+						<div class="modal fade" id="myModal2">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="close" data-dismiss="modal">&times;</button>
+										<h3 class="modal-title">Contact us</h3>
+									</div> <!-- End of Modal 2 Header -->
+									<div class="modal-body">
+										<p>You can reach us at</p>
+										<p> Mob: 09998877123<br>Office: 0111-22113311</p>
+										<p>Or mail us at : searchme@mail.com</p>
+										<p>Or just fill out the form below!</p>
+										<hr>
+										<form class="navbar-form">
+											<input type="text" name="name" placeholder="Enter your name" class="entname form-control">
+											<br>
+											<input type="text" name="mail" placeholder="Enter your mail id" class="entmail form-control">
+											<br>
+											<textarea class="form-control entcomm" rows="10"></textarea>
+											<button type="button" class="btn btn-primary btn-medium entbut">Submit Comment</span></button>
+										</form>
+									</div> <!-- End of Modal 2 Body -->
+									<div class="modal-footer">
+										<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+									</div> <!-- End of Modal 2 footer -->
+								</div> <!-- End of Modal 2 Content -->
+							</div> <!-- End of Modal 2 Dialog -->
+						</div> <!-- End of Modal 2 -->
+
+						<div class="modal fade" id="myModal3">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button class="close" data-dismiss="modal">&times;</button>
+										<h3 class="modal-title">Login</h3>
+									</div> <!-- End of Modal 2 Header -->
+									<div class="modal-body">
+										<form class="navbar-form">
+											<input type="text" name="name" placeholder="Username" class="form-control usrname">
+											<br><br>
+											<input type="password" name="pass" placeholder="Password" class="form-control pswrd">
+											<br><br>													
+											<button type="button" class="btn btn-primary btn-medium logn">Login</span></button>
+										</form>
+									</div> <!-- End of Modal 3 Body -->
+									<div class="modal-footer">
+										<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+									</div> <!-- End of Modal 3 footer -->
+								</div> <!-- End of Modal 3 Content -->
+							</div> <!-- End of Modal 3 Dialog -->
+						</div> <!-- End of Modal 3 -->
+
+						
+					<div class="col-sm-6 foot2 pull-right">
+						<p>Designed by Jeevan <span class="glyphicon glyphicon-heart"></span></p>
+					</div> <!-- end of Col Sm 6 -->
+
+				</div> <!-- End of Row -->
+				<div class="row">
+					<div class="col-12 foot3">
+						<p>Follow us on  
+							<a href="#"><img src="images/fb.png" alt="Facebook" class="socimg"></a>
+							<a href="#"><img src="images/tweet.png" alt="Tweeter" class="socimg"></a>
+							<a href="#"><img src="images/gplus.png" alt="Google Plus" class="socimg"></a>
+							<a href="#"><img src="images/lin.png" alt="Linked In" class="socimg"></a>
+						</p>
+					</div> <!-- End of Col 12 -->
+				</div> <!-- End of Row -->
+				<div class="row">
+					<div class="col-12 foot4">
+						<p>Copyright &copy; 2016
+						</p>
+					</div> <!-- End of Col 12 -->
+				</div> <!-- End of Row -->
+			</div> <!-- End of Container -->
 		</footer> <!-- End of Footer -->
 	
 
