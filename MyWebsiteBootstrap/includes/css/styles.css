@@ -276,13 +276,13 @@ My Custom CSS
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
    .navbar-form
    {
       width: 100%;
    }
-   
+
    body /* Background Image Sea */
    {
       background: url(../../images/sea_small.jpg) top center no-repeat;
@@ -361,9 +361,14 @@ My Custom CSS
       box-shadow: 0 6px 12px rgba(0,0,0,.175);
    }
 
-   .mm
+   .mm .nav
    {
       width: 40%;
+   }
+
+   #searchme
+   {
+      margin-top: 90px;      
    }
    	
 }
