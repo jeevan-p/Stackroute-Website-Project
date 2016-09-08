@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title></title>
+		<meta name="description" content="">
+		
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link href="includes/css/loginStyles.css" rel="stylesheet">
+		<link href="includes/css/adminStyles.css" rel="stylesheet">
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+		<script type="text/javascript" src="includes/d3/d3.min.js"></script>
+
+		<!-- Custom Font --> <!-- Just an Example -->
+		<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+		
+	</head>
+	<body>
+		<div class="container" id="main">
+			<div class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header logoheader">
+						<a href="#" class="navbar-brand" alt="Logo"><img src="images/logofull.png" alt="brand"></a>
+					</div>
+					
+				</div> <!-- End of Container -->
+			</div> <!-- End of Navbar -->
+
+			<div class="row hide" id="login">
+				<div class="panel panel-default login-panel half-width center">
+					<div class="panel-body">
+						<h3>
+							Welcome to StackRoute<br>
+							<small>Please Login to continue</small>
+						</h3> <!-- End of Lead Heading -->
+				 		<form data-toggle="validator" role="form" id="login-form">
+				 			
+				 			<!-- username -->
+				 			<div class="row uname">
+				 				<label for="uname" class="pull-left">Username</label>				 				 
+								<input type="email" id="login-uname" name="uname" class="form-control focusnext" placeholder="example : abc@xyz.com" required>
+							</div> <!-- End of Text Box -->
+							<br>
+							
+							<!-- password -->
+							<div class="row pass">
+				 				<label for="pass" class="pull-left">Password</label>				 				 
+								<input type="password" id="login-pass" name="pass" class="form-control" placeholder="Min 6 characters" required>
+								<div class="pull-right"><p><a href="#">Forgot Password</a></p></div>
+							</div> <!-- End of Text Box -->
+							<br>
+
+							<h3>								
+								<small id="login-error" class="error-message hide">Wrong user id or password</small>
+							</h3> <!-- End of Error Message -->
+
+							<!-- Login Button -->
+							<div class="row formbut">							
+								<button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login </button>
+							</div> <!-- End of Button -->
+						</form>
+						<br>
+
+						<!-- To Sign Up -->
+						<div class="center">New to StackRoute? <a class="signup-link" href="#">Create your StackRoute Account</a></div>
+					</div> <!-- End of Panel Body -->
+				</div> <!-- End of Panel -->
+			</div> <!-- End of Login -->
+
+			<div class="row hide" id="sign-up">
+				<div class="panel panel-default login-panel half-width center">
+					<div class="panel-body">
+						<h3>
+							Create your StackRoute Account<br>
+							<small>Please enter your registered email</small>
+						</h3> <!-- End of Lead Heading -->
+				 		<form data-toggle="validator" role="form" id="sign-up-form">
+				 			<br>
+				 			<!-- username - email -->
+				 			<div class="row sign-up-uname">
+				 				<input type="email" id="signup-uname" name="sign-up-uname" class="form-control" placeholder="example : abc@xyz.com" required>
+				 				<p class="pull-right hide success-message"><span class="glyphicon glyphicon-ok"></span> Email Id verified!</p>
+				 				<p class="pull-right hide error-message">* Id not Authorized! Please contact your system administrator!</p>
+							</div>
+							<br>
+
+							<div id="load-sign-up" class="hide">
+								<h3>
+									<small>Please provide your Details</small>
+								</h3> <!-- End of Sub Heading -->
+								
+					 			<!-- Name -->
+								<div class="row sign-up-name">
+									<label for="sign-up-name" class="pull-left">Name</label>
+						 			<input type="text" id="signup-name" name="sign-up-name" class="form-control focusnext" placeholder="Full Name" required>
+						 			<p class="pull-right hide error-message">* Name should be alphabetic</p>
+						 			<p class="pull-right hide success-message"><span class="glyphicon glyphicon-ok"></span> Name verified!</p>
+						 		</div>
+								<br>
+								
+								<!-- Password -->
+								<div class="row sign-up-pass">
+					 				<label for="sign-up-pass" class="pull-left">Password</label>				 				 
+									<input type="password" id="signup-pass" name="sign-up-pass" class="form-control focusnext" placeholder="Min 8 characters" required>
+									<p class="pull-right hide error-message">* A minimum of 8 characters is required</p>
+									<p class="pull-right hide success-message"><span class="glyphicon glyphicon-ok"></span> Password verified!</p>
+								</div>
+								<br>
+								
+								<!-- Retype Password -->
+								<div class="row sign-up-repass">
+					 				<label for="sign-up-repass" class="pull-left">Re-enter Password</label>
+									<input type="password" id="signup-repass" name="sign-up-repass" class="form-control focusnext" placeholder="Passwords should match" required>
+									<p class="pull-right hide error-message">* Passwords doesn't match</p>
+									<p class="pull-right hide success-message"><span class="glyphicon glyphicon-ok"></span> Passwords match!</p>
+								</div>
+								<br>
+								
+								<!-- Mobile Number -->
+								<div class="row sign-up-mobile">
+					 				<label for="sign-up-mobile" class="pull-left">Contact Number</label>				 		
+					 				<input type="number" id="signup-mobile" name="sign-up-mobile" class="form-control" placeholder="10 digit number" required>
+					 				<p class="pull-right hide error-message">* Invalid Mobile Number</p>
+					 				<p class="pull-right hide success-message"><span class="glyphicon glyphicon-ok"></span> Number verified!</p>				
+								</div>
+
+								<br>
+								<!-- Sign Up Button -->
+								<div class="row">							
+									<button type="submit" class="btn btn-success" id="sign-up-button" href="#"><span class="glyphicon glyphicon-thumbs-up"></span>&#32;Sign Up </button>
+								</div> <!-- End of Button -->
+							</div>
+						</form>
+
+						<br>
+						<!-- To Login -->
+						<div class="center">Already have an Account? <a href="#" class="login-link">Login</a></div>
+					</div> <!-- End of Panel Body -->
+				</div> <!-- End of Panel -->
+			</div> <!-- End of Login -->
+		</div>
+		<footer>
+			<div class="navbar navbar-default navbar-fixed-bottom login-foot">
+				<div class="container">
+					<div class="navbar-header pull-right">
+						<p>Developed with <span class="glyphicon glyphicon-heart"></span> by Stackroute Wave-9 Batch</p>
+					</div>
+					
+				</div> <!-- End of Container -->
+			</div> <!-- End of Navbar -->
+		</footer>
+		<!-- All Javascript at the bottom of the page for faster page loading -->
+			
+		<!-- First try for the online version of jQuery-->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		
+		<!-- If no online access, fallback to our hardcoded version of jQuery -->
+		<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.js"></script>
+		
+		<!-- Bootstrap JS -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		
+		<!-- Session plugin JS -->
+		<script src="includes/js/jquerysession.js"></script>
+
+		<!-- Custom JS -->
+		<script src="includes/js/script.js"></script>
+		<script src="includes/jquery/myquerylogin.js"></script>
+		<!-- <script src="includes/jquery/myqueryadmin.js"></script> -->
+	</body>
+</html>

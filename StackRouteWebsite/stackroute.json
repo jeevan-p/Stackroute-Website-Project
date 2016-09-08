@@ -1,0 +1,114 @@
+{
+  "user": [
+    {
+      "id": 100001,
+      "registered": true,
+      "userType": "admin",
+      "batch": 0,
+      "subCategory": 0,
+      "email": "a@x.in",
+      "name": "Susanne York",
+      "logkey": "p123",
+      "contactNumber": 9123456789
+    },
+    {
+      "id": 100002,
+      "registered": true,
+      "userType": "student",
+      "batch": 1,
+      "subCategory": 1,
+      "email": "abc1@xyz.in",
+      "name": "Hillary Vazquez",
+      "logkey": "password123",
+      "contactNumber": 9123456789
+    },
+    {
+      "id": 100003,
+      "registered": true,
+      "userType": "admin",
+      "batch": 2,
+      "subCategory": 2,
+      "email": "abc2@xyz.in",
+      "name": "Kate Terry",
+      "logkey": "password123",
+      "contactNumber": 9123456789
+    },
+    {
+      "id": 100004,
+      "registered": true,
+      "userType": "student",
+      "batch": 3,
+      "subCategory": 3,
+      "email": "abc3@xyz.in",
+      "name": "Addie Brown",
+      "logkey": "password123",
+      "contactNumber": 9123456789
+    },
+    {
+      "id": 100005,
+      "registered": true,
+      "userType": "admin",
+      "batch": 4,
+      "subCategory": 4,
+      "email": "abc4@xyz.in",
+      "name": "Salas Dillon",
+      "logkey": "password123",
+      "contactNumber": 9123456789
+    }
+  ],
+  "batch": [
+    {
+      "id": 0,
+      "batchName": "Full-Stack-Wave 9",
+      "status": "active"
+    }
+  ],
+  "subCategory": [
+    {
+      "id": 0,
+      "categoryName": "Team 1",
+      "mentorId": 500001
+    }
+  ],
+  "form": [
+    {
+      "id": 0,
+      "author": 500001,
+      "security": "public",
+      "title": "Form Title",
+      "subTitle": "Form Subtitle",
+      "targetAudience": "all",
+      "targetId": 111111,
+      "fields": [
+        {
+          "id": 0,
+          "label": "Name",
+          "type": "text",
+          "validation": "required"
+        },
+        {
+          "id": 1,
+          "label": "Mobile",
+          "type": "text",
+          "validation": "required"
+        }
+      ]
+    }
+  ],
+  "formResult": [
+    {
+      "id": 0,
+      "formId": 0,
+      "submitterId": 111111,
+      "data": {
+        "Name": "ABC",
+        "Mobile": 9874523431
+      }
+    }
+  ],
+  "attendance": [
+    {
+      "id": 0
+    }
+  ]
+}

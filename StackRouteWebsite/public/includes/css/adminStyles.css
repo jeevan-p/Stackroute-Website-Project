@@ -1,0 +1,72 @@
+/*
+
+My Custom CSS for Admin Page
+============================
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+   .inline
+   {
+      display: inline;
+   }
+   #admin-main
+   {
+      background-color: lightgrey;
+   }
+   .red
+   {
+      background: red;
+   }
+   .blue
+   {
+      background: blue;
+   }
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+   .admin-nav
+   {
+      height: 90px;
+   }
+   .mymainlogo
+   {
+      height: 60px;
+   }
+   .adminlogo
+   {
+      padding-left: 0px;
+   }
+   .navbar-userdetails
+   {
+      margin-top: 10px;
+   }
+/* --------------------------------------
+   Login & Sign-Up
+   -------------------------------------- */
+   #admin-body
+   {
+      background-color: white;
+      margin-top: 100px;
+      padding: 0;
+      padding-top: 10px;
+   }
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+  
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+   	
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+   
+}

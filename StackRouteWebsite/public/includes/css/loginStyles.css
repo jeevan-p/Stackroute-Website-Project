@@ -1,0 +1,100 @@
+/*
+
+My Custom CSS for Login/SignUp Page
+===================================
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+   p
+   {
+      font-family: 'Slabo 27px', serif;
+      font-size: 15px;
+   }
+   .center
+   {
+      text-align: center;
+      margin: auto;
+   }
+
+   .full-width
+   {
+      width: 100%;
+   }
+
+   .half-width
+   {
+      width: 50%;
+   }
+
+   .hide
+   {
+      display: none;
+   }
+
+   .show
+   {
+      display: initial;
+   }
+
+   .error-message
+   {
+      color: red;
+      font-style: italic;
+   }
+
+   .success-message
+   {
+      color: green;
+      font-style: italic;
+   }
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+   .logoheader
+   {
+      height: 175px;
+   }
+/* --------------------------------------
+   Login & Sign-Up
+   -------------------------------------- */
+   #login, #sign-up
+   {
+      margin-top: 200px;
+      margin-bottom: 75px;      
+   }
+
+   .login-panel
+   {
+      background-image: linear-gradient(to top,#fff 0,#f8f8f8 100%);
+      padding: 10px;
+   }
+
+/* --------------------------------------
+   Footer
+   -------------------------------------- */
+   .login-foot
+   {
+      min-height: 20px;
+      height: 25px;
+   }
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+  
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+   	
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+   
+}
